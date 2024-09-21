@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Hero from './componenst/hero/Hero';
+import AccordianPage from './componenst/accordian/Accordian';
+import CarouselPage from './componenst/carousel/Carousel';
+import TutorialCards from './componenst/second/Second';
+import TutorialSlider from './componenst/third/Third';
+import Jack from './componenst/jack/jack';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <>
+    <div className=''>
+      <Hero />
+      <AccordianPage />
+      <TutorialCards />
+      <TutorialSlider />
+      <CarouselPage />
+      <Jack />
     </div>
-  );
+  </>
 }
 
 export default App;
